@@ -1,0 +1,62 @@
+.linux-terminal-app {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  overflow: hidden;
+  background: #070a0f;
+  color: #f7fafc;
+  font-family: "Cascadia Mono", "Consolas", monospace;
+}
+
+.linux-terminal-app__screen {
+  height: 100%;
+  overflow: auto;
+  padding: 16px;
+  background:
+    radial-gradient(circle at top right, rgba(71, 190, 173, 0.13), transparent 30%),
+    #070a0f;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.linux-terminal-app__line {
+  min-height: 22px;
+  white-space: pre-wrap;
+}
+
+.linux-terminal-app__line pre {
+  margin: 0 0 8px;
+  white-space: pre-wrap;
+  color: #d9e4ef;
+}
+
+.linux-terminal-app__line.is-system pre {
+  color: #8de7c3;
+}
+
+.linux-terminal-app__line.is-error pre {
+  color: #ff7777;
+}
+
+.linux-terminal-app__prompt {
+  margin-right: 10px;
+  color: #6ee7b7;
+  font-weight: 700;
+}
+
+.linux-terminal-app__input-line {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+}
+
+.linux-terminal-app__input-line input {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #ffffff;
+  caret-color: #6ee7b7;
+  font: inherit;
+}
